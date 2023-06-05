@@ -1,0 +1,30 @@
+server:
+    port: 8080
+#数据库连接
+spring:
+    mvc:
+      pathmatch:
+          matching-strategy: ant_path_matcher
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/dk?useUnicode=true&CharacterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+        username: root
+        password: root
+        type: com.zaxxer.hikari.HikariDataSource
+#redis
+    redis:
+        database: 0
+        host: localhost
+        port: 6379
+#邮箱
+    mail:
+        username: 940663597@qq.com
+        password: nnberdggpblxbbbf
+        host: smtp.qq.com
+        from: 940663597@qq.com
+#mybadis-plus
+mybatis-plus:
+    typeAliasesPackage: com.yzdbx.dkpan.dao.po
+
+
+
