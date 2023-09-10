@@ -11,6 +11,7 @@ public class DkPanApplication {
     public static void main(String[] args) {
         SpringApplication.run(DkPanApplication.class, args);
         System.out.println("hello");
+        System.out.println("world");
     }
 
 }
